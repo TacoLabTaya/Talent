@@ -1,16 +1,32 @@
+/*
+  div.color-xx
+    div.collection
+      div.collection__title
+        h2.title
+        div.collection__description
+      slider-component
+        ul.grid
+          li.grid__item
+        slider-buttons
+          button.slider-button--prev
+          div.slider-counter
+            span // 4 spans show page number of total 
+          button.slider-button--next
+      div.collection__view-all
+        a.link
+
+*/
 @media screen and (max-width: 749px) {
   .collection .grid__item:only-child {
     flex: 0 0 100%;
     max-width: 100%;
   }
 }
-
 @media screen and (max-width: 989px) {
   .collection .slider.slider--tablet {
     margin-bottom: 1.5rem;
   }
 }
-
 .collection .loading-overlay {
   top: 0;
   right: 0;
@@ -28,7 +44,6 @@
     padding-right: 5rem;
   }
 }
-
 .collection.loading .loading-overlay {
   display: block;
 }
@@ -43,7 +58,6 @@
     scroll-padding-left: 1.5rem;
   }
 }
-
 .collection__description > * {
   margin: 0;
 }
@@ -74,7 +88,6 @@
     max-width: none;
   }
 }
-
 .collection__view-all a:not(.link) {
   margin-top: 1rem;
-}
+}/*# sourceMappingURL=template-collection.css.map */
