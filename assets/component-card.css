@@ -327,12 +327,28 @@
 .card-wrapper .card {
   position: relative;
 }
+.card-wrapper .card .card__inner {
+  margin-bottom: 4rem;
+}
 .card-wrapper .card .card__content {
   position: absolute;
-  bottom: 0;
+  bottom: 2%;
+  left: 2%;
+  right: 2%;
+  width: auto;
+  padding: 4%;
+}
+.card-wrapper .card .card__content .card__information {
+  padding: 0;
+}
+.card-wrapper .card .card__content .card__information h3, .card-wrapper .card .card__content .card__information span {
+  filter: drop-shadow(1px 1px 0px rgba(0, 0, 0, 0.5019607843));
+}
+.card-wrapper .card .card__content .card__badge {
+  padding: 0;
 }
 .card-wrapper .card .quick-add {
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 2%;
+  right: 2%;
 }/*# sourceMappingURL=component-card.css.map */

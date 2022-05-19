@@ -432,19 +432,27 @@
     .card__inner{
       .card__media {
       }
+      margin-bottom: 4rem;
     }
     .card__content {
       position: absolute;
-      bottom: 0;
+      bottom: 2%;
+      left:2%;
+      right: 2%;
+      width: auto; 
+      padding:4%;
       .card__information{
+        padding:0;
+        h3,span{filter: drop-shadow(1px 1px 0px #00000080);}
       }
       .card__badge {
+        padding:0;
       }
     }
     .quick-add{
       position: absolute;
-      top: 0;
-      right: 0;
+      top: 2%;
+      right: 2%;
     }
   }
 }
