@@ -321,4 +321,18 @@
 
 .card-article-info {
   margin-top: 1rem;
+}
+
+/*Talent Original*/
+.card-wrapper .card {
+  position: relative;
+}
+.card-wrapper .card .card__content {
+  position: absolute;
+  bottom: 0;
+}
+.card-wrapper .card .quick-add {
+  position: absolute;
+  top: 0;
+  right: 0;
 }/*# sourceMappingURL=component-card.css.map */

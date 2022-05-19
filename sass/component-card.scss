@@ -182,36 +182,6 @@
           .rating-count{}
         }
       }
-      .quick-add{
-        product-form{
-          input#id{}
-          button.quick-add__submit{
-            span {}// soldout check
-            .sold-out-message{}
-            .loading-overlay__spinner{
-              svg.spinner{
-                circle{}
-              }
-            }
-          }
-        }
-        modal-opener{
-          button.quick-add__submit{
-            .loading-overlay__spinner{
-              svg.spinner{
-                circle{}
-              }
-            }
-          }
-        }
-        quick-add-modal{
-          .quick-add-modal__content{
-            button.quick-add-modal__toggle{
-              .quick-add-modal__content-info{}
-            }
-          }
-        }
-      }
       .card__badge {
         align-self: flex-end;
         grid-row-start: 3;
@@ -228,6 +198,36 @@
         }
 
         .badge{}
+      }
+    }
+    .quick-add{
+      product-form{
+        input#id{}
+        button.quick-add__submit{
+          span {}// soldout check
+          .sold-out-message{}
+          .loading-overlay__spinner{
+            svg.spinner{
+              circle{}
+            }
+          }
+        }
+      }
+      modal-opener{
+        button.quick-add__submit{
+          .loading-overlay__spinner{
+            svg.spinner{
+              circle{}
+            }
+          }
+        }
+      }
+      quick-add-modal{
+        .quick-add-modal__content{
+          button.quick-add-modal__toggle{
+            .quick-add-modal__content-info{}
+          }
+        }
       }
     }
     .icon-wrap {
@@ -424,3 +424,27 @@
 }
 
 
+/*Talent Original*/
+
+.card-wrapper {
+  .card {
+    position: relative;
+    .card__inner{
+      .card__media {
+      }
+    }
+    .card__content {
+      position: absolute;
+      bottom: 0;
+      .card__information{
+      }
+      .card__badge {
+      }
+    }
+    .quick-add{
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+  }
+}
