@@ -93,49 +93,11 @@
 }
 
 /*Talent Original*/
-.collection {
-  font-size: 1.2rem;
-}
-.collection .h0 {
-  font-size: calc(var(--font-heading-scale) * 6rem);
-}
-.collection .h1 {
-  font-size: calc(var(--font-heading-scale) * 4rem);
-}
-.collection .h2 {
-  font-size: calc(var(--font-heading-scale) * 3rem);
-}
-.collection .h3 {
-  font-size: calc(var(--font-heading-scale) * 2rem);
-}
-.collection .h4 {
-  font-size: calc(var(--font-heading-scale) * 1.7rem);
-}
-.collection .h5 {
-  font-size: calc(var(--font-heading-scale) * 1.5rem);
-}
-@media only screen and (min-width: 750px) {
-  .collection .h0 {
-    font-size: calc(var(--font-heading-scale) * 7rem);
-  }
-  .collection .h1 {
-    font-size: calc(var(--font-heading-scale) * 5.2rem);
-  }
-  .collection .h2 {
-    font-size: calc(var(--font-heading-scale) * 4rem);
-  }
-  .collection .h3 {
-    font-size: calc(var(--font-heading-scale) * 2.4rem);
-  }
-  .collection .h4 {
-    font-size: calc(var(--font-heading-scale) * 2rem);
-  }
-  .collection .h5 {
-    font-size: calc(var(--font-heading-scale) * 1.5rem);
-  }
-}
 .collection .collection__title .title {
   --font-heading-weight:900;
+}
+.collection .collection__title .collection__description.uppercase {
+  font-weight: bold;
 }
 .collection > slider-component .grid {
   display: flex;

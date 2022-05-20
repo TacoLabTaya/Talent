@@ -42,7 +42,7 @@
         "heading_size": "h0",
         "description": "<p>太平洋を望むビーチマルアタ<\/p><p>テキーラの生産地 テキーラ村<\/p><p>カラフルな街並み ガナファト<\/p>",
         "show_description": false,
-        "description_style": "subtitle",
+        "description_style": "uppercase",
         "collection": "メキシコ",
         "products_to_show": 3,
         "columns_desktop": 3,

@@ -611,7 +611,10 @@
             "label": "サブタイトル"
           },
           "options__3": {
-            "label": "大文字"
+            "label": "大文字/太文字"
+          },
+          "options__4": {
+            "label": "巨大"
           }
         },
         "view_all_style": {
@@ -2598,7 +2601,7 @@
               },
               "options__29": {
                 "label": "飛行機"
-              },
+              },options__3
               "options__30": {
                 "label": "植物"
               },

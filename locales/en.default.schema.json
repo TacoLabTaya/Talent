@@ -581,7 +581,10 @@
             "label": "Subtitle"
           },
           "options__3": {
-            "label": "Uppercase"
+            "label": "Uppercase/Bold"
+          },
+          "options__4": {
+            "label": "Large"
           }
         },
         "collection": {
