@@ -155,6 +155,22 @@
       "info": "t:sections.all.colors.has_cards_info"
     },
     {
+      "type": "select",
+      "id": "typography",
+      "options": [
+        {
+          "value": "none",
+          "label": "t:sections.featured-collection.settings.typography.none.label"
+        },
+        {
+          "value": "sample",
+          "label": "t:sections.featured-collection.settings.typography.none.label"
+        }
+      ],
+      "default": "none",
+      "label": "t:sections.featured-collection.settings.typography.label"
+    },
+    {
       "type": "range",
       "id": "gradrate",
       "min": 0,
@@ -162,6 +178,102 @@
       "step": 1,
       "default": 50,
       "label": "t:sections.featured-collection.settings.gradrate.label"
+    },
+    {
+      "type": "select",
+      "id": "gradblend",
+      "options": [
+        {
+          "value": "none",
+          "label": "t:sections.featured-collection.settings.gradblend.none.label"
+        },
+        {
+          "value": "sample",
+          "label": "t:sections.featured-collection.settings.typography.none.label"
+        }
+      ],
+      "default":"none",
+      "label": "t:sections.featured-collection.settings.gradblend.label"
+    },
+    {
+      "type": "range",
+      "id": "imageblur",
+      "min": 0,
+      "max": 10,
+      "step": 1,
+      "default": 0,
+      "label": "t:sections.featured-collection.settings.imageblur.label"
+    },
+    {
+      "type": "select",
+      "id": "animation_type",
+      "options": [
+        {
+          "value": "scroll",
+          "label": "t:sections.featured-collection.settings.animation_type.t-scroll.label"
+        },
+        {
+          "value": "zoom",
+          "label": "t:sections.featured-collection.settings.animation_type.t-zoom.label"
+        },
+        {
+          "value": "move",
+          "label": "t:sections.featured-collection.settings.animation_type.t-move.label"
+        },
+        {
+          "value": "gradiation",
+          "label": "t:sections.featured-collection.settings.animation_type.t-grad.label"
+        }
+      ],
+      "default": "scroll",
+      "label": "t:sections.featured-collection.settings.animation_type.label"
+    },
+    {
+      "type": "range",
+      "id": "animation_duration",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "default": 20,
+      "label": "t:sections.featured-collection.settings.duration.label"
+    },
+    {
+      "type": "range",
+      "id": "garally_margin",
+      "min": 0,
+      "max": 300,
+      "step": 5,
+      "default": 0,
+      "label": "t:sections.featured-collection.settings.garally_margin.label"
+    },
+    {
+      "type": "range",
+      "id": "slider-width",
+      "min": 40,
+      "max": 100,
+      "step": 5,
+      "default": 100,
+      "label": "t:sections.featured-collection.settings.slider-width.label"
+    },
+    {
+      "type": "select",
+      "id": "slider-position",
+      "options": [
+        {
+          "value": "left",
+          "label": "t:sections.featured-collection.settings.slider-position.left.label"
+        },
+        {
+          "value": "right",
+          "label": "t:sections.featured-collection.settings.slider-position.right.label"
+        },
+        {
+          "value": "center",
+          "label": "t:sections.featured-collection.settings.slider-position.center.label"
+        }
+      ],
+      "default": "center",
+      "label": "t:sections.featured-collection.settings.slider-position.label"
     },
     {
       "type": "select",

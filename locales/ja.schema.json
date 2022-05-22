@@ -555,6 +555,60 @@
         "title": {
           "label": "見出し"
         },
+        "typography": {
+          "label": "見出しの装飾",
+          "none": {
+            "label": "なし"
+          }
+        },
+        "gradrate": {
+          "label": "グラデーション不透過率"
+        },
+        "gradblend": {
+          "label": "グラデーションブレンドモード",
+          "none": {
+            "label": "なし"
+          }
+        },
+        "imageblur": {
+          "label": "ヒーロー画像ぼかし"
+        },
+        "animation_type": {
+          "label": "アニメタイプ",
+          "t-scroll": {
+            "label": "Scroll"
+          },
+          "t-zoom": {
+            "label": "Zoom"
+          },
+          "t-move": {
+            "label": "Move"
+          },
+          "t-grad": {
+            "label": "Gradiation"
+          }
+        },
+        "duration": {
+          "label": "アニメ秒"
+        },
+        "garally_margin": {
+          "label": "Garally余白"
+        },
+        "slider-width": {
+          "label": "スライダー幅"
+        },
+        "slider-position": {
+          "label": "スライダー位置",
+          "left": {
+            "label": "Left"
+          },
+          "right": {
+            "label": "Right"
+          },
+          "center": {
+            "label": "Center"
+          }
+        },
         "collection": {
           "label": "コレクション"
         },

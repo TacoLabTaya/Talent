@@ -566,8 +566,59 @@
         "title": {
           "label": "Heading"
         },
+        "typography": {
+          "label": "Heading typography",
+          "none": {
+            "label": "None"
+          }
+        },
         "gradrate": {
           "label": "Gradiation Rate"
+        },
+        "gradblend": {
+          "label": "Gradiation Blend Mode",
+          "none": {
+            "label": "None"
+          }
+        },
+        "imageblur": {
+          "label": "HeroImage Blur"
+        },
+        "animation_type": {
+          "label": "Animation Stype",
+          "t-scroll": {
+            "label": "Scroll"
+          },
+          "t-zoom": {
+            "label": "Zoom"
+          },
+          "t-move": {
+            "label": "Move"
+          },
+          "t-grad": {
+            "label": "Gradiation"
+          }
+        },
+        "duration": {
+          "label": "Animation Duration"
+        },
+        "garally_margin": {
+          "label": "Garally Margin"
+        },
+        "slider-width": {
+          "label": "Slider width"
+        },
+        "slider-position": {
+          "label": "Slider Position",
+          "left": {
+            "label": "Left"
+          },
+          "right": {
+            "label": "Right"
+          },
+          "center": {
+            "label": "Center"
+          }
         },
         "description": {
           "label": "Description"

@@ -2,7 +2,7 @@ if (!customElements.get('lay-grad')) {
   customElements.define('lay-grad', class LayGrad extends HTMLElement {
     constructor() {
       super();
-      console.log("Laygrad")
+      //console.log("Laygrad")
       const heroimg_url = this.dataset.heroimg;
       this.setHV(heroimg_url);
     }
