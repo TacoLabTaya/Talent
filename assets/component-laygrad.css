@@ -11,6 +11,10 @@ lay-grad {
   background-color: transparent;
   z-index: 0;
 }
+lay-grad > * {
+  -webkit-backdrop-filter: blur(var(--laygrad--imageblur));
+          backdrop-filter: blur(var(--laygrad--imageblur));
+}
 lay-grad::before, lay-grad::after {
   position: absolute;
   top: 0;
@@ -29,11 +33,16 @@ lay-grad::before {
 lay-grad.laygrad--heroimg::after {
   content: "";
   z-index: -2;
-  filter: grayscale(1);
   background-image: var(--laygrad--hero-url);
   background-size: auto 110%;
-  -webkit-animation: heromove 40s infinite both alternate;
-          animation: heromove 40s infinite both alternate;
+  -webkit-animation: heromove var(--laygrad--animedura) infinite both alternate;
+          animation: heromove var(--laygrad--animedura) infinite both alternate;
+}
+lay-grad.laygrad--heroimg.laygrad--imgfl--grayscale::after {
+  filter: grayscale(var(--laygrad--image-fil));
+}
+lay-grad.laygrad--heroimg.laygrad--imgfl--sepia::after {
+  filter: sepia(var(--laygrad--image-fil));
 }
 lay-grad.laygrad--heroimg.laygrad--heroimg--v::after {
   background-size: auto 110%;

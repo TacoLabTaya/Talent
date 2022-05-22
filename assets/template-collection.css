@@ -99,6 +99,18 @@
 .collection .collection__title .collection__description.uppercase {
   font-weight: bold;
 }
+.collection > slider-component.slider--position-left {
+  margin-left: 0;
+  margin-right: auto;
+}
+.collection > slider-component.slider--position-right {
+  margin-left: auto;
+  margin-right: 0;
+}
+.collection > slider-component.slider--position-center {
+  margin-left: auto;
+  margin-right: auto;
+}
 .collection > slider-component .grid {
   display: flex;
   align-items: flex-start;

@@ -118,11 +118,16 @@
     }
   }
   >slider-component{
+    &.slider--position-left  { margin-left:   0; margin-right: auto;}
+    &.slider--position-right { margin-left:auto; margin-right: 0;   }
+    &.slider--position-center{ margin-left:auto; margin-right: auto;}
+    
     .grid{
       display: flex;
       //flex-wrap: wrap;
       align-items: flex-start;
     }
+    
   }
 
   .collection__view-all{}

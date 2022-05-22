@@ -11,6 +11,7 @@ lay-grad{
     position:relative;
     background-color:transparent;
     z-index: 0;
+    >*{ backdrop-filter: blur(var(--laygrad--imageblur)); }
     &::before, &::after{
         position: absolute;
         top:0;left:0;right:0;bottom: 0;
@@ -22,17 +23,30 @@ lay-grad{
         background-attachment: fixed;
         z-index: -1;
         opacity: calc(var(--laygrad--grad-rate) / 100);
+        
     }
 
     &.laygrad--heroimg {
         &::after{
             content: "";
             z-index: -2;
-            filter: grayscale(1);
             background-image: var(--laygrad--hero-url);
             background-size: auto 110%;
-            animation: heromove 40s infinite both alternate;
+            animation: heromove var(--laygrad--animedura) infinite both alternate;
         }
+        &.laygrad--imgfl--grayscale{
+            &::after{
+                filter: unquote("grayscale(var(--laygrad--image-fil))");
+            }
+        }
+        &.laygrad--imgfl--sepia{
+            &::after{
+                filter: unquote("sepia(var(--laygrad--image-fil))");
+            }
+        }
+    }
+
+    &.laygrad--heroimg {
         &.laygrad--heroimg--v{        
             &::after{
                 background-size: auto 110%;
