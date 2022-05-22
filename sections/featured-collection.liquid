@@ -46,9 +46,11 @@
     assign show_desktop_slider = true
   endif
 -%}
-<div
-  class="color-{{ section.settings.color_scheme }} isolate laygrad--heroimg"
-  style="--hero-image-url:url('{{ section.settings.collection.image | img_url:'1024x' }}')"
+<script src="{{ 'component-laygrad.js' | asset_url }}" defer="defer"></script>
+<lay-grad
+  class="color-{{ section.settings.color_scheme }} isolate laygrad laygrad--heroimg"
+  style="--laygrad--gradrate:{{ section.settings.gradrate}};"
+  data-heroimg="{{ section.settings.collection.image | img_url:'1024x' }}"
 >
   <div class="collection section-{{ section.id }}-padding{% if section.settings.full_width %} collection--full-width{% endif %}">
       <div class="collection__title title-wrapper  title-wrapper--no-top-margin page-width{% if show_mobile_slider %} title-wrapper--self-padded-tablet-down{% endif %}{% if show_desktop_slider %} collection__title--desktop-slider{% endif %}">
@@ -68,6 +70,7 @@
               card_product: product,
               media_aspect_ratio: section.settings.image_ratio,
               show_secondary_image: section.settings.show_secondary_image,
+              show_discription: true,
               show_vendor: section.settings.show_vendor,
               show_rating: section.settings.show_rating,
               show_quick_add: section.settings.enable_quick_add,
@@ -108,7 +111,7 @@
       </div>
     {%- endif -%}
   </div>
-</div>
+</lay-grad>
 
 {% schema %}
 {
@@ -150,6 +153,15 @@
       "default": "background-1",
       "label": "t:sections.all.colors.label",
       "info": "t:sections.all.colors.has_cards_info"
+    },
+    {
+      "type": "range",
+      "id": "gradrate",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "default": 50,
+      "label": "t:sections.featured-collection.settings.gradrate.label"
     },
     {
       "type": "select",

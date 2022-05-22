@@ -101,6 +101,5 @@
 }
 .collection > slider-component .grid {
   display: flex;
-  flex-wrap: wrap;
   align-items: flex-start;
 }/*# sourceMappingURL=template-collection.css.map */

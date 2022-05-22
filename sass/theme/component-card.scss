@@ -432,7 +432,7 @@
     .card__inner{
       .card__media {
       }
-      margin-bottom: 4rem;
+      margin-bottom: 6rem;
     }
     .card__content {
       position: absolute;
@@ -444,6 +444,31 @@
       .card__information{
         padding:0;
         h3,span{filter: drop-shadow(1px 1px 0px #00000080);}
+
+        .card__heading{}
+        .card-information{
+          .card-info--sub{
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            flex-wrap: wrap;
+            .card-info--price{}
+            .card-info--vendor{}
+          }
+          .card-info--description{
+            margin: 0;
+            text-align: bottom;
+            >span{
+              display: inline-block;
+              max-height: 2.8em;
+              overflow: hidden;
+              -webkit-background-clip: text;
+              background-clip: text;
+              -webkit-text-fill-color: transparent;
+              background-image: linear-gradient(0deg, transparent, rgb(var(--color-foreground)) 50%, rgb(var(--color-foreground)));
+            }
+          }
+        }
       }
       .card__badge {
         padding:0;

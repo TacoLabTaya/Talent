@@ -566,6 +566,9 @@
         "title": {
           "label": "Heading"
         },
+        "gradrate": {
+          "label": "Gradiation Rate"
+        },
         "description": {
           "label": "Description"
         },
