@@ -570,6 +570,21 @@
             "label": "なし"
           }
         },
+        "imagefilter": {
+          "label": "ヒーロー画像フィルタ種類",
+          "none": {
+            "label": "None"
+          },
+          "grayscale": {
+            "label": "grayscale"
+          },
+          "sepia": {
+            "label": "sepia"
+          }
+        },
+        "imagefilrate": {
+          "label": "ヒーロー画像フィルタ率"
+        },
         "imageblur": {
           "label": "ヒーロー画像ぼかし"
         },

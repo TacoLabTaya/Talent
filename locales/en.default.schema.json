@@ -581,6 +581,21 @@
             "label": "None"
           }
         },
+        "imagefilter": {
+          "label": "Image Filter",
+          "none": {
+            "label": "None"
+          },
+          "grayscale": {
+            "label": "grayscale"
+          },
+          "sepia": {
+            "label": "sepia"
+          }
+        },
+        "imagefilrate": {
+          "label": "Image Filter"
+        },
         "imageblur": {
           "label": "HeroImage Blur"
         },

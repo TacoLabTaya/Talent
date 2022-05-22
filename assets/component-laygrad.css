@@ -24,7 +24,7 @@ lay-grad::before {
   background: var(--gradient-background);
   background-attachment: fixed;
   z-index: -1;
-  opacity: calc(var(--laygrad--gradrate) / 100);
+  opacity: calc(var(--laygrad--grad-rate) / 100);
 }
 lay-grad.laygrad--heroimg::after {
   content: "";
