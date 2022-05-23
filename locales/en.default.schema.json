@@ -577,6 +577,12 @@
           "blackborder": {
             "label": "blackborder"
           },
+          "whitedown": {
+            "label": "whitedown"
+          },
+          "blackdown": {
+            "label": "blackdown"
+          },
           "graydown": {
             "label": "graydown"
           },

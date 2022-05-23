@@ -144,17 +144,94 @@ lay-grad{
 
 
 lay-grad{
+    --border--h2:2px;
+    --border--p :1px;
     .laygrad--message{
 
     }
     &.laygrad--typog--whiteborder{
-        .laygrad--message{}
+        .laygrad--message{
+            h2{
+                filter: 
+                    drop-shadow( calc(var(--border--h2)*-1) calc(var(--border--h2)*-1) 0px rgba(255, 255, 255, 0.5)) 
+                    drop-shadow( calc(var(--border--h2)*1)  calc(var(--border--h2)*-1) 0px rgba(255, 255, 255, 0.5)) 
+                    drop-shadow( calc(var(--border--h2)*-1) calc(var(--border--h2)*1)  0px rgba(255, 255, 255, 0.5)) 
+                    drop-shadow( calc(var(--border--h2)*1)  calc(var(--border--h2)*1)  0px rgba(255, 255, 255, 0.5)) ;
+            }
+            p{
+                filter: 
+                    drop-shadow( calc(var(--border--p)*-1) calc(var(--border--p)*-1) 0px rgba(255, 255, 255, 0.5)) 
+                    drop-shadow( calc(var(--border--p)*1)  calc(var(--border--p)*-1) 0px rgba(255, 255, 255, 0.5)) 
+                    drop-shadow( calc(var(--border--p)*-1) calc(var(--border--p)*1)  0px rgba(255, 255, 255, 0.5)) 
+                    drop-shadow( calc(var(--border--p)*1)  calc(var(--border--p)*1)  0px rgba(255, 255, 255, 0.5)) ;
+            }
+        }
     }
     &.laygrad--typog--blackborder{
-        .laygrad--message{}
+        .laygrad--message{
+            h2{
+                filter: 
+                    drop-shadow( calc(var(--border--h2)*-1) calc(var(--border--h2)*-1) 0px rgba(0, 0, 0, 0.5)) 
+                    drop-shadow( calc(var(--border--h2)*1)  calc(var(--border--h2)*-1) 0px rgba(0, 0, 0, 0.5)) 
+                    drop-shadow( calc(var(--border--h2)*-1) calc(var(--border--h2)*1)  0px rgba(0, 0, 0, 0.5)) 
+                    drop-shadow( calc(var(--border--h2)*1)  calc(var(--border--h2)*1)  0px rgba(0, 0, 0, 0.5)) ;
+            }
+            p{
+                filter: 
+                    drop-shadow( calc(var(--border--p)*-1) calc(var(--border--p)*-1) 0px rgba(0, 0, 0, 0.5)) 
+                    drop-shadow( calc(var(--border--p)*1)  calc(var(--border--p)*-1) 0px rgba(0, 0, 0, 0.5)) 
+                    drop-shadow( calc(var(--border--p)*-1) calc(var(--border--p)*1)  0px rgba(0, 0, 0, 0.5)) 
+                    drop-shadow( calc(var(--border--p)*1)  calc(var(--border--p)*1)  0px rgba(0, 0, 0, 0.5)) ;
+            }
+        }
+    }
+    &.laygrad--typog--whitedown{
+        .laygrad--message{
+            h2{
+                filter: 
+                    drop-shadow( calc(var(--border--h2)*1)  calc(var(--border--h2)*0)  0px rgba(255, 255, 255, 0.8)) 
+                    drop-shadow( calc(var(--border--h2)*0)  calc(var(--border--h2)*1)  0px rgba(255, 255, 255, 0.8)) 
+                    drop-shadow( calc(var(--border--h2)*1)  calc(var(--border--h2)*1)  0px rgba(255, 255, 255, 0.8)) ;
+            }
+            p{
+                filter: 
+                    drop-shadow( calc(var(--border--p)*1)  calc(var(--border--p)*0)  0px rgba(255, 255, 255, 0.8)) 
+                    drop-shadow( calc(var(--border--p)*0)  calc(var(--border--p)*1)  0px rgba(255, 255, 255, 0.8)) 
+                    drop-shadow( calc(var(--border--p)*1)  calc(var(--border--p)*1)  0px rgba(255, 255, 255, 0.8)) ;
+            }
+        }
+    }
+    &.laygrad--typog--blackdown{
+        .laygrad--message{
+            h2{
+                filter: 
+                    drop-shadow( calc(var(--border--h2)*1)  calc(var(--border--h2)*0)  0px rgba(0, 0, 0, 0.5)) 
+                    drop-shadow( calc(var(--border--h2)*0)  calc(var(--border--h2)*1)  0px rgba(0, 0, 0, 0.5)) 
+                    drop-shadow( calc(var(--border--h2)*1)  calc(var(--border--h2)*1)  0px rgba(0, 0, 0, 0.5)) ;
+            }
+            p{
+                filter: 
+                    drop-shadow( calc(var(--border--p)*1)  calc(var(--border--p)*0)  0px rgba(0, 0, 0, 0.5)) 
+                    drop-shadow( calc(var(--border--p)*0)  calc(var(--border--p)*1)  0px rgba(0, 0, 0, 0.5)) 
+                    drop-shadow( calc(var(--border--p)*1)  calc(var(--border--p)*1)  0px rgba(0, 0, 0, 0.5)) ;
+            }
+        }
     }
     &.laygrad--typog--graydown{
-        .laygrad--message{}
+        .laygrad--message{
+            h2{
+                filter: 
+                    drop-shadow( calc(var(--border--h2)*1)  calc(var(--border--h2)*0)  0px rgba(128, 128, 128, 0.5)) 
+                    drop-shadow( calc(var(--border--h2)*0)  calc(var(--border--h2)*1)  0px rgba(128, 128, 128, 0.5)) 
+                    drop-shadow( calc(var(--border--h2)*1)  calc(var(--border--h2)*1)  0px rgba(128, 128, 128, 0.5)) ;
+            }
+            p{
+                filter: 
+                    drop-shadow( calc(var(--border--p)*1)  calc(var(--border--p)*0)  0px rgba(128, 128, 128, 0.5)) 
+                    drop-shadow( calc(var(--border--p)*0)  calc(var(--border--p)*1)  0px rgba(128, 128, 128, 0.5)) 
+                    drop-shadow( calc(var(--border--p)*1)  calc(var(--border--p)*1)  0px rgba(128, 128, 128, 0.5)) ;
+            }
+        }
     }
     &.laygrad--typog--stecker{
         .laygrad--message{}
