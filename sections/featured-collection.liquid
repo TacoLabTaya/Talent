@@ -52,12 +52,12 @@
     color-{{ section.settings.color_scheme }} isolate 
     laygrad laygrad--heroimg 
     laygrad--typog--{{ section.settings.typography }} 
-    laygrad--blend--{{ section.settings.gradblend }} 
     laygrad--imgfl--{{ section.settings.imagefilter }} 
     laygrad--anime--{{ section.settings.animation_type }} 
   "
   style="
     --laygrad--grad-rate:{{ section.settings.gradrate }};
+    --laygrad--gradblend:{{ section.settings.gradblend }};
     --laygrad--imageblur:{{ section.settings.imageblur }}px;
     --laygrad--image-fil:{{ section.settings.imagefilrate }}%;
     --laygrad--animedura:{{ section.settings.animation_duration }}s;
@@ -65,14 +65,20 @@
   data-heroimg="{{ section.settings.collection.image | img_url:'1024x' }}"
 >
   <div class="collection section-{{ section.id }}-padding{% if section.settings.full_width %} collection--full-width{% endif %}">
-      <div class="collection__title title-wrapper  title-wrapper--no-top-margin page-width{% if show_mobile_slider %} title-wrapper--self-padded-tablet-down{% endif %}{% if show_desktop_slider %} collection__title--desktop-slider{% endif %}">
-        {%- if section.settings.title != blank -%}
-          <h2 class="title {{ section.settings.heading_size }}">{{ section.settings.title | escape }}</h2>
-        {%- endif -%}
-        {%- if section.settings.description != blank or section.settings.show_description and section.settings.collection.description != empty -%}
-          <div class="collection__description {{ section.settings.description_style }}">{%- if section.settings.show_description -%}{{ section.settings.collection.description }}{%- else -%}{{ section.settings.description }}{% endif %}</div>
-        {%- endif -%}
-      </div>
+    <div class="laygrad--message collection__title title-wrapper  title-wrapper--no-top-margin page-width{% if show_mobile_slider %} title-wrapper--self-padded-tablet-down{% endif %}{% if show_desktop_slider %} collection__title--desktop-slider{% endif %}">
+      {%- if section.settings.title != blank -%}
+        <h2 class="title {{ section.settings.heading_size }}">{{ section.settings.title | escape }}</h2>
+      {%- endif -%}
+      {%- if section.settings.description != blank or section.settings.show_description and section.settings.collection.description != empty -%}
+        <div class="collection__description {{ section.settings.description_style }}">
+          {%- if section.settings.show_description -%}
+            {{ section.settings.collection.description }}
+          {%- else -%}
+            {{ section.settings.description }}
+          {% endif %}
+        </div>
+      {%- endif -%}
+    </div>
 
     <slider-component
       class="
@@ -189,8 +195,36 @@
           "label": "t:sections.featured-collection.settings.typography.none.label"
         },
         {
-          "value": "sample",
-          "label": "t:sections.featured-collection.settings.typography.none.label"
+          "value": "whiteborder",
+          "label": "t:sections.featured-collection.settings.typography.whiteborder.label"
+        },
+        {
+          "value": "blackborder",
+          "label": "t:sections.featured-collection.settings.typography.blackborder.label"
+        },
+        {
+          "value": "graydown",
+          "label": "t:sections.featured-collection.settings.typography.graydown.label"
+        },
+        {
+          "value": "stecker",
+          "label": "t:sections.featured-collection.settings.typography.stecker.label"
+        },
+        {
+          "value": "neon",
+          "label": "t:sections.featured-collection.settings.typography.neon.label"
+        },
+        {
+          "value": "gradation",
+          "label": "t:sections.featured-collection.settings.typography.gradation.label"
+        },
+        {
+          "value": "pop",
+          "label": "t:sections.featured-collection.settings.typography.pop.label"
+        },
+        {
+          "value": "foggy",
+          "label": "t:sections.featured-collection.settings.typography.foggy.label"
         }
       ],
       "default": "none",
@@ -214,8 +248,52 @@
           "label": "t:sections.featured-collection.settings.gradblend.none.label"
         },
         {
-          "value": "sample",
-          "label": "t:sections.featured-collection.settings.typography.none.label"
+          "value": "darken",
+          "label": "t:sections.featured-collection.settings.gradblend.darken.label"
+        },
+        {
+          "value": "multiply",
+          "label": "t:sections.featured-collection.settings.gradblend.multiply.label"
+        },
+        {
+          "value": "color-burn",
+          "label": "t:sections.featured-collection.settings.gradblend.color-burn.label"
+        },
+        {
+          "value": "lighten",
+          "label": "t:sections.featured-collection.settings.gradblend.lighten.label"
+        },
+        {
+          "value": "screen",
+          "label": "t:sections.featured-collection.settings.gradblend.screen.label"
+        },
+        {
+          "value": "color-dodge",
+          "label": "t:sections.featured-collection.settings.gradblend.color-dodge.label"
+        },
+        {
+          "value": "overlay",
+          "label": "t:sections.featured-collection.settings.gradblend.overlay.label"
+        },
+        {
+          "value": "soft-light",
+          "label": "t:sections.featured-collection.settings.gradblend.soft-light.label"
+        },
+        {
+          "value": "hard-light",
+          "label": "t:sections.featured-collection.settings.gradblend.hard-light.label"
+        },
+        {
+          "value": "difference",
+          "label": "t:sections.featured-collection.settings.gradblend.difference.label"
+        },
+        {
+          "value": "exclusion",
+          "label": "t:sections.featured-collection.settings.gradblend.exclusion.label"
+        },
+        {
+          "value": "luminosity",
+          "label": "t:sections.featured-collection.settings.gradblend.luminosity.label"
         }
       ],
       "default":"none",

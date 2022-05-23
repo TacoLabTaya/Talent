@@ -570,6 +570,30 @@
           "label": "Heading typography",
           "none": {
             "label": "None"
+          },
+          "whiteborder": {
+            "label": "whiteborder"
+          },
+          "blackborder": {
+            "label": "blackborder"
+          },
+          "graydown": {
+            "label": "graydown"
+          },
+          "stecker": {
+            "label": "stecker"
+          },
+          "neon": {
+            "label": "neon"
+          },
+          "gradation": {
+            "label": "gradation"
+          },
+          "pop": {
+            "label": "pop"
+          },
+          "foggy": {
+            "label": "foggy"
           }
         },
         "gradrate": {
@@ -579,6 +603,42 @@
           "label": "Gradiation Blend Mode",
           "none": {
             "label": "None"
+          },
+          "darken": {
+            "label": "darken"
+          },
+          "multiply": {
+            "label": "multiply"
+          },
+          "color-burn": {
+            "label": "color-burn"
+          },
+          "lighten": {
+            "label": "lighten"
+          },
+          "screen": {
+            "label": "screen"
+          },
+          "color-dodge": {
+            "label": "color-dodge"
+          },
+          "overlay": {
+            "label": "overlay"
+          },
+          "soft-light": {
+            "label": "soft-light"
+          },
+          "hard-light": {
+            "label": "hard-light"
+          },
+          "difference": {
+            "label": "difference"
+          },
+          "exclusion": {
+            "label": "exclusion"
+          },
+          "luminosity": {
+            "label": "luminosity"
           }
         },
         "imagefilter": {

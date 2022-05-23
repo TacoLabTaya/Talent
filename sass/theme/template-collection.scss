@@ -108,6 +108,10 @@
 
 .collection{
   .collection__title{
+    h1,h2,h3,span,p,a,div{   
+      overflow-wrap: break-word;
+      word-break: keep-all;
+    }
     .title{
       --font-heading-weight:900;
     }

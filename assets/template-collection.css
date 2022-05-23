@@ -93,6 +93,10 @@
 }
 
 /*Talent Original*/
+.collection .collection__title h1, .collection .collection__title h2, .collection .collection__title h3, .collection .collection__title span, .collection .collection__title p, .collection .collection__title a, .collection .collection__title div {
+  overflow-wrap: break-word;
+  word-break: keep-all;
+}
 .collection .collection__title .title {
   --font-heading-weight:900;
 }
