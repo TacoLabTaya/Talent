@@ -31,36 +31,95 @@ lay-grad{
             content: "";
             z-index: -2;
             background-image: var(--laygrad--hero-url);
-            background-size: auto 110%;
-            animation: heromove var(--laygrad--animedura) infinite both alternate;
+        }
+        &.laygrad--heroimg--v{
+            &::after{ background-size: auto 100%; }
+        }
+        &.laygrad--heroimg--h{        
+            &::after{ background-size: 100% auto; }
         }
         &.laygrad--imgfl--grayscale{
-            &::after{
-                filter: unquote("grayscale(var(--laygrad--image-fil))");
-            }
+            &::after{ filter: unquote("grayscale(var(--laygrad--image-fil))"); }
         }
         &.laygrad--imgfl--sepia{
-            &::after{
-                filter: unquote("sepia(var(--laygrad--image-fil))");
-            }
+            &::after{ filter: unquote("sepia(var(--laygrad--image-fil))"); }
+        }
+        &.laygrad--imgfl--brightness{
+            &::after{ filter: unquote("brightness(var(--laygrad--image-fil))"); }
+        }
+        &.laygrad--imgfl--contrast{
+            &::after{ filter: unquote("contrast(var(--laygrad--image-fil))"); }
         }
     }
 
-    &.laygrad--heroimg {
-        &.laygrad--heroimg--v{        
-            &::after{
-                background-size: auto 110%;
-            }
+    &.laygrad--heroimg.laygrad--anime--scroll {
+        &.laygrad--heroimg--v{
+            &::after{ background-size: auto 120%; }
         }
         &.laygrad--heroimg--h{        
-            &::after{
-                background-size: 110% auto;
-            }
+            &::after{ background-size: 120% auto; }
         }
+        &::before{}       
+        &::after{
+            animation: laygradScroll var(--laygrad--animedura) infinite both alternate;
+        }
+    }
+    &.laygrad--heroimg.laygrad--anime--zoom {
+        &.laygrad--heroimg--v{
+            &::after{ animation: laygradZoomV var(--laygrad--animedura) infinite both alternate; }
+        }
+        &.laygrad--heroimg--h{        
+            &::after{ animation: laygradZoomH var(--laygrad--animedura) infinite both alternate; }
+        }
+        &::before{}       
+        &::after{
+            
+        }
+    }
+    &.laygrad--heroimg.laygrad--anime--move {
+        &.laygrad--heroimg--v{
+            &::after{ background-size: auto 140%; }
+        }
+        &.laygrad--heroimg--h{        
+            &::after{ background-size: 140% auto; }
+        }
+        &::before{}       
+        &::after{
+            animation: laygradMove var(--laygrad--animedura) infinite both alternate;
+        }
+    }
+    &.laygrad--heroimg.laygrad--anime--gradiation {
+        &.laygrad--heroimg--v{
+            &::after{ background-size: auto 110%; }
+        }
+        &.laygrad--heroimg--h{        
+            &::after{ background-size: 110% auto; }
+        }
+        &::before{
+            background-size: 500%;
+            animation: laygradMove var(--laygrad--animedura) infinite both alternate;
+        }       
+        &::after{}
     }
 }
 
-@keyframes heromove {
+@keyframes laygradScroll {
     0%   {background-position:   0%;}
     100% {background-position: 100%;}
+}
+@keyframes laygradZoomV {
+    0%   {background-size: auto 140%;}
+    100% {background-size: auto 140%;}
+}
+@keyframes laygradZoomH {
+    0%   {background-size: 140% auto;}
+    100% {background-size: 140% auto;}
+}
+@keyframes laygradMove {
+      0% {background-position:   0%   0%;}
+     20% {background-position: 100%   0%;}
+     40% {background-position:   0%  50%;}
+     60% {background-position: 100%  50%;}
+     80% {background-position:   0% 100%;}
+    100% {background-position: 100% 100%;}
 }

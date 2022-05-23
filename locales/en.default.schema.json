@@ -591,6 +591,12 @@
           },
           "sepia": {
             "label": "sepia"
+          },
+          "brightness": {
+            "label": "brightness"
+          },
+          "contrast": {
+            "label": "contrast"
           }
         },
         "imagefilrate": {

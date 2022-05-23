@@ -573,13 +573,19 @@
         "imagefilter": {
           "label": "ヒーロー画像フィルタ種類",
           "none": {
-            "label": "None"
+            "label": "なし"
           },
           "grayscale": {
-            "label": "grayscale"
+            "label": "白黒"
           },
           "sepia": {
-            "label": "sepia"
+            "label": "セピア"
+          },
+          "brightness": {
+            "label": "明るさ"
+          },
+          "contrast": {
+            "label": "コントラスト"
           }
         },
         "imagefilrate": {
@@ -591,16 +597,16 @@
         "animation_type": {
           "label": "アニメタイプ",
           "t-scroll": {
-            "label": "Scroll"
+            "label": "スクロール"
           },
           "t-zoom": {
-            "label": "Zoom"
+            "label": "ズーム"
           },
           "t-move": {
-            "label": "Move"
+            "label": "動く"
           },
           "t-grad": {
-            "label": "Gradiation"
+            "label": "グラデーション"
           }
         },
         "duration": {
