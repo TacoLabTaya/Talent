@@ -3,8 +3,10 @@ if (!customElements.get('lay-grad')) {
     constructor() {
       super();
       //console.log("Laygrad")
-      const heroimg_url = this.dataset.heroimg;
-      this.setHV(heroimg_url);
+      if(this.dataset.heroimg){
+        const heroimg_url = this.dataset.heroimg;
+        this.setHV(heroimg_url);
+      }
     }
     loadImage = (src) => {
       return new Promise((resolve, reject) => {

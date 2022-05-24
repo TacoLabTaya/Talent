@@ -1,3 +1,7 @@
+
+{{ 'component-laygrad.css' | asset_url | stylesheet_tag }}
+{{ 'component-texture.css' | asset_url | stylesheet_tag }}
+
 <link rel="stylesheet" href="{{ 'section-main-page.css' | asset_url }}" media="print" onload="this.media='all'">
 <link rel="stylesheet" href="{{ 'component-rte.css' | asset_url }}" media="print" onload="this.media='all'">
 
@@ -18,14 +22,34 @@
   }
 {%- endstyle -%}
 
-<div class="page-width page-width--narrow section-{{ section.id }}-padding">
+<script src="{{ 'component-laygrad.js' | asset_url }}" defer="defer"></script>
+<lay-grad
+  class="
+    page-width page-width--narrow section-{{ section.id }}-padding 
+    laygrad laygrad--heroimg 
+    laygrad--typog--{{ section.settings.typography }} 
+    laygrad--imgfl--{{ section.settings.imagefilter }} 
+    laygrad--anime--{{ section.settings.animation_type }} 
+  "
+  style="
+    --laygrad--grad-rate:{{ section.settings.gradrate }};
+    --laygrad--gradblend:{{ section.settings.gradblend }};
+    --laygrad--imageblur:{{ section.settings.imageblur }}px;
+    --laygrad--image-fil:{{ section.settings.imagefilrate }}%;
+    --laygrad--animedura:{{ section.settings.animation_duration }}s;
+  "
+  {% if section.settings.heroimage %}
+    data-heroimg="{{ section.settings.heroimage | img_url: '1024x' }}"
+  {% endif %}
+ 
+>
   <h1 class="main-page-title page-title h0">
     {{ page.title | escape }}
   </h1>
   <div class="rte">
     {{ page.content }}
   </div>
-</div>
+</lay-grad>
 
 {% schema %}
 {
