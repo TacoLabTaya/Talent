@@ -186,57 +186,98 @@
       "label": "t:sections.all.colors.label",
       "info": "t:sections.all.colors.has_cards_info"
     },
+    
+    {
+      "type": "range",
+      "id": "blockwidth-pc",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "%",
+      "label": "t:sections.all.blockstyle.blockwidth-pc.label",
+      "default": 60
+    },
+    {
+      "type": "range",
+      "id": "blockwidth-sp",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "%",
+      "label": "t:sections.all.blockstyle.blockwidth-sp.label",
+      "default": 60
+    },
+    {
+      "type": "select",
+      "id": "blockstyle",
+      "options": [
+        {
+          "value": "box",
+          "label": "t:sections.all.blockstyle.style.box.label"
+        },
+        {
+          "value": "glass",
+          "label": "t:sections.all.blockstyle.style.glass.label"
+        },
+        {
+          "value": "lux",
+          "label": "t:sections.all.blockstyle.style.lux.label"
+        }
+      ],
+      "default":"box",
+      "label": "t:sections.all.blockstyle.style.label"
+    },
     {
       "type": "select",
       "id": "typography",
       "options": [
         {
           "value": "none",
-          "label": "t:sections.featured-collection.settings.typography.none.label"
+          "label": "t:sections.all.typography.none.label"
         },
         {
           "value": "whiteborder",
-          "label": "t:sections.featured-collection.settings.typography.whiteborder.label"
+          "label": "t:sections.all.typography.whiteborder.label"
         },
         {
           "value": "blackborder",
-          "label": "t:sections.featured-collection.settings.typography.blackborder.label"
+          "label": "t:sections.all.typography.blackborder.label"
         },
         {
           "value": "whitedown",
-          "label": "t:sections.featured-collection.settings.typography.whitedown.label"
+          "label": "t:sections.all.typography.whitedown.label"
         },
         {
           "value": "blackdown",
-          "label": "t:sections.featured-collection.settings.typography.blackdown.label"
+          "label": "t:sections.all.typography.blackdown.label"
         },
         {
           "value": "graydown",
-          "label": "t:sections.featured-collection.settings.typography.graydown.label"
+          "label": "t:sections.all.typography.graydown.label"
         },
         {
           "value": "stecker",
-          "label": "t:sections.featured-collection.settings.typography.stecker.label"
+          "label": "t:sections.all.typography.stecker.label"
         },
         {
           "value": "neon",
-          "label": "t:sections.featured-collection.settings.typography.neon.label"
+          "label": "t:sections.all.typography.neon.label"
         },
         {
           "value": "gradation",
-          "label": "t:sections.featured-collection.settings.typography.gradation.label"
+          "label": "t:sections.all.typography.gradation.label"
         },
         {
           "value": "pop",
-          "label": "t:sections.featured-collection.settings.typography.pop.label"
+          "label": "t:sections.all.typography.pop.label"
         },
         {
           "value": "foggy",
-          "label": "t:sections.featured-collection.settings.typography.foggy.label"
+          "label": "t:sections.all.typography.foggy.label"
         }
       ],
       "default": "none",
-      "label": "t:sections.featured-collection.settings.typography.label"
+      "label": "t:sections.all.typography.label"
     },
     {
       "type": "range",
@@ -245,7 +286,7 @@
       "max": 100,
       "step": 1,
       "default": 50,
-      "label": "t:sections.featured-collection.settings.gradrate.label"
+      "label": "t:sections.all.laygrad.gradrate.label"
     },
     {
       "type": "select",
@@ -253,59 +294,59 @@
       "options": [
         {
           "value": "none",
-          "label": "t:sections.featured-collection.settings.gradblend.none.label"
+          "label": "t:sections.all.laygrad.gradblend.none.label"
         },
         {
           "value": "darken",
-          "label": "t:sections.featured-collection.settings.gradblend.darken.label"
+          "label": "t:sections.all.laygrad.gradblend.darken.label"
         },
         {
           "value": "multiply",
-          "label": "t:sections.featured-collection.settings.gradblend.multiply.label"
+          "label": "t:sections.all.laygrad.gradblend.multiply.label"
         },
         {
           "value": "color-burn",
-          "label": "t:sections.featured-collection.settings.gradblend.color-burn.label"
+          "label": "t:sections.all.laygrad.gradblend.color-burn.label"
         },
         {
           "value": "lighten",
-          "label": "t:sections.featured-collection.settings.gradblend.lighten.label"
+          "label": "t:sections.all.laygrad.gradblend.lighten.label"
         },
         {
           "value": "screen",
-          "label": "t:sections.featured-collection.settings.gradblend.screen.label"
+          "label": "t:sections.all.laygrad.gradblend.screen.label"
         },
         {
           "value": "color-dodge",
-          "label": "t:sections.featured-collection.settings.gradblend.color-dodge.label"
+          "label": "t:sections.all.laygrad.gradblend.color-dodge.label"
         },
         {
           "value": "overlay",
-          "label": "t:sections.featured-collection.settings.gradblend.overlay.label"
+          "label": "t:sections.all.laygrad.gradblend.overlay.label"
         },
         {
           "value": "soft-light",
-          "label": "t:sections.featured-collection.settings.gradblend.soft-light.label"
+          "label": "t:sections.all.laygrad.gradblend.soft-light.label"
         },
         {
           "value": "hard-light",
-          "label": "t:sections.featured-collection.settings.gradblend.hard-light.label"
+          "label": "t:sections.all.laygrad.gradblend.hard-light.label"
         },
         {
           "value": "difference",
-          "label": "t:sections.featured-collection.settings.gradblend.difference.label"
+          "label": "t:sections.all.laygrad.gradblend.difference.label"
         },
         {
           "value": "exclusion",
-          "label": "t:sections.featured-collection.settings.gradblend.exclusion.label"
+          "label": "t:sections.all.laygrad.gradblend.exclusion.label"
         },
         {
           "value": "luminosity",
-          "label": "t:sections.featured-collection.settings.gradblend.luminosity.label"
+          "label": "t:sections.all.laygrad.gradblend.luminosity.label"
         }
       ],
       "default":"none",
-      "label": "t:sections.featured-collection.settings.gradblend.label"
+      "label": "t:sections.all.laygrad.gradblend.label"
     },
     {
       "type": "select",
@@ -313,27 +354,27 @@
       "options": [
         {
           "value": "none",
-          "label": "t:sections.featured-collection.settings.imagefilter.none.label"
+          "label": "t:sections.all.laygrad.imagefilter.none.label"
         },
         {
           "value": "grayscale",
-          "label": "t:sections.featured-collection.settings.imagefilter.grayscale.label"
+          "label": "t:sections.all.laygrad.imagefilter.grayscale.label"
         },
         {
           "value": "sepia",
-          "label": "t:sections.featured-collection.settings.imagefilter.sepia.label"
+          "label": "t:sections.all.laygrad.imagefilter.sepia.label"
         },
         {
           "value": "brightness",
-          "label": "t:sections.featured-collection.settings.imagefilter.brightness.label"
+          "label": "t:sections.all.laygrad.imagefilter.brightness.label"
         },
         {
           "value": "contrast",
-          "label": "t:sections.featured-collection.settings.imagefilter.contrast.label"
+          "label": "t:sections.all.laygrad.imagefilter.contrast.label"
         }
       ],
       "default":"none",
-      "label": "t:sections.featured-collection.settings.imagefilter.label"
+      "label": "t:sections.all.laygrad.imagefilter.label"
     },
     {
       "type": "range",
@@ -342,7 +383,7 @@
       "max": 200,
       "step": 5,
       "default": 50,
-      "label": "t:sections.featured-collection.settings.imagefilrate.label"
+      "label": "t:sections.all.laygrad.imagefilrate.label"
     },
     {
       "type": "range",
@@ -351,7 +392,7 @@
       "max": 10,
       "step": 1,
       "default": 0,
-      "label": "t:sections.featured-collection.settings.imageblur.label"
+      "label": "t:sections.all.laygrad.imageblur.label"
     },
     {
       "type": "select",
@@ -359,23 +400,23 @@
       "options": [
         {
           "value": "scroll",
-          "label": "t:sections.featured-collection.settings.animation_type.t-scroll.label"
+          "label": "t:sections.all.laygrad.animation_type.t-scroll.label"
         },
         {
           "value": "zoom",
-          "label": "t:sections.featured-collection.settings.animation_type.t-zoom.label"
+          "label": "t:sections.all.laygrad.animation_type.t-zoom.label"
         },
         {
           "value": "move",
-          "label": "t:sections.featured-collection.settings.animation_type.t-move.label"
+          "label": "t:sections.all.laygrad.animation_type.t-move.label"
         },
         {
           "value": "gradiation",
-          "label": "t:sections.featured-collection.settings.animation_type.t-grad.label"
+          "label": "t:sections.all.laygrad.animation_type.t-grad.label"
         }
       ],
       "default": "scroll",
-      "label": "t:sections.featured-collection.settings.animation_type.label"
+      "label": "t:sections.all.laygrad.animation_type.label"
     },
     {
       "type": "range",
@@ -384,7 +425,7 @@
       "max": 100,
       "step": 1,
       "default": 20,
-      "label": "t:sections.featured-collection.settings.duration.label"
+      "label": "t:sections.all.laygrad.duration.label"
     },
     {
       "type": "range",

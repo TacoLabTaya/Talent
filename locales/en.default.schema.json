@@ -339,6 +339,151 @@
         "options__3": {
           "label": "Large"
         }
+      },
+      "typography": {
+        "label": "Heading typography",
+        "none": {
+          "label": "None"
+        },
+        "whiteborder": {
+          "label": "whiteborder"
+        },
+        "blackborder": {
+          "label": "blackborder"
+        },
+        "whitedown": {
+          "label": "whitedown"
+        },
+        "blackdown": {
+          "label": "blackdown"
+        },
+        "graydown": {
+          "label": "graydown"
+        },
+        "stecker": {
+          "label": "stecker"
+        },
+        "neon": {
+          "label": "neon"
+        },
+        "gradation": {
+          "label": "gradation"
+        },
+        "pop": {
+          "label": "pop"
+        },
+        "foggy": {
+          "label": "foggy"
+        }
+      },
+      "laygrad":{
+        "gradrate": {
+          "label": "Gradiation Rate"
+        },
+        "gradblend": {
+          "label": "Gradiation Blend Mode",
+          "none": {
+            "label": "None"
+          },
+          "darken": {
+            "label": "darken"
+          },
+          "multiply": {
+            "label": "multiply"
+          },
+          "color-burn": {
+            "label": "color-burn"
+          },
+          "lighten": {
+            "label": "lighten"
+          },
+          "screen": {
+            "label": "screen"
+          },
+          "color-dodge": {
+            "label": "color-dodge"
+          },
+          "overlay": {
+            "label": "overlay"
+          },
+          "soft-light": {
+            "label": "soft-light"
+          },
+          "hard-light": {
+            "label": "hard-light"
+          },
+          "difference": {
+            "label": "difference"
+          },
+          "exclusion": {
+            "label": "exclusion"
+          },
+          "luminosity": {
+            "label": "luminosity"
+          }
+        },
+        "imagefilter": {
+          "label": "Image Filter",
+          "none": {
+            "label": "None"
+          },
+          "grayscale": {
+            "label": "grayscale"
+          },
+          "sepia": {
+            "label": "sepia"
+          },
+          "brightness": {
+            "label": "brightness"
+          },
+          "contrast": {
+            "label": "contrast"
+          }
+        },
+        "imagefilrate": {
+          "label": "Image Filter"
+        },
+        "imageblur": {
+          "label": "HeroImage Blur"
+        },
+        "animation_type": {
+          "label": "Animation Stype",
+          "t-scroll": {
+            "label": "Scroll"
+          },
+          "t-zoom": {
+            "label": "Zoom"
+          },
+          "t-move": {
+            "label": "Move"
+          },
+          "t-grad": {
+            "label": "Gradiation"
+          }
+        },
+        "duration": {
+          "label": "Animation Duration"
+        }
+      },
+      "blockstyle": {
+        "blockwidth-pc":{
+          "label": "block width pc"
+        },
+        "blockwidth-sp":{
+          "label": "block width sp"
+        },
+        "style":{
+          "label": "block style",
+          "box":{
+            "label": "box"
+          },
+          "glass":{
+            "label": "glass"
+          },
+          "lux":{
+            "label": "lux"
+          }
+        }
       }
     },
     "announcement-bar": {
@@ -563,132 +708,6 @@
     "featured-collection": {
       "name": "Featured collection",
       "settings": {
-        "title": {
-          "label": "Heading"
-        },
-        "typography": {
-          "label": "Heading typography",
-          "none": {
-            "label": "None"
-          },
-          "whiteborder": {
-            "label": "whiteborder"
-          },
-          "blackborder": {
-            "label": "blackborder"
-          },
-          "whitedown": {
-            "label": "whitedown"
-          },
-          "blackdown": {
-            "label": "blackdown"
-          },
-          "graydown": {
-            "label": "graydown"
-          },
-          "stecker": {
-            "label": "stecker"
-          },
-          "neon": {
-            "label": "neon"
-          },
-          "gradation": {
-            "label": "gradation"
-          },
-          "pop": {
-            "label": "pop"
-          },
-          "foggy": {
-            "label": "foggy"
-          }
-        },
-        "gradrate": {
-          "label": "Gradiation Rate"
-        },
-        "gradblend": {
-          "label": "Gradiation Blend Mode",
-          "none": {
-            "label": "None"
-          },
-          "darken": {
-            "label": "darken"
-          },
-          "multiply": {
-            "label": "multiply"
-          },
-          "color-burn": {
-            "label": "color-burn"
-          },
-          "lighten": {
-            "label": "lighten"
-          },
-          "screen": {
-            "label": "screen"
-          },
-          "color-dodge": {
-            "label": "color-dodge"
-          },
-          "overlay": {
-            "label": "overlay"
-          },
-          "soft-light": {
-            "label": "soft-light"
-          },
-          "hard-light": {
-            "label": "hard-light"
-          },
-          "difference": {
-            "label": "difference"
-          },
-          "exclusion": {
-            "label": "exclusion"
-          },
-          "luminosity": {
-            "label": "luminosity"
-          }
-        },
-        "imagefilter": {
-          "label": "Image Filter",
-          "none": {
-            "label": "None"
-          },
-          "grayscale": {
-            "label": "grayscale"
-          },
-          "sepia": {
-            "label": "sepia"
-          },
-          "brightness": {
-            "label": "brightness"
-          },
-          "contrast": {
-            "label": "contrast"
-          }
-        },
-        "imagefilrate": {
-          "label": "Image Filter"
-        },
-        "imageblur": {
-          "label": "HeroImage Blur"
-        },
-        "animation_type": {
-          "label": "Animation Stype",
-          "t-scroll": {
-            "label": "Scroll"
-          },
-          "t-zoom": {
-            "label": "Zoom"
-          },
-          "t-move": {
-            "label": "Move"
-          },
-          "t-grad": {
-            "label": "Gradiation"
-          }
-        },
-        "duration": {
-          "label": "Animation Duration"
-        },
         "garally_margin": {
           "label": "Garally Margin"
         },
@@ -1637,7 +1656,18 @@
       }
     },
     "main-page": {
-      "name": "Page"
+      "name": "Page",
+      "settings": {
+        "minheight": {
+          "label": "min-height"
+        },
+        "heroimage": {
+          "label": "HeroImage"
+        },
+        "profimage": {
+          "label": "profimage"
+        }
+      }
     },
     "main-password-footer": {
       "name": "Password footer"
