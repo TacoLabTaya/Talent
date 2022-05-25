@@ -146,12 +146,14 @@ lay-grad{
 lay-grad{
     --border--h2:2px;
     --border--p :1px;
+    display: block;
+    min-height: var(--laygrad--minheight);
     .laygrad--message{
 
     }
     &.laygrad--typog--whiteborder{
         .laygrad--message{
-            h2{
+            h1,h2,h3,h4,h5{
                 filter: 
                     drop-shadow( calc(var(--border--h2)*-1) calc(var(--border--h2)*-1) 0px rgba(255, 255, 255, 0.5)) 
                     drop-shadow( calc(var(--border--h2)*1)  calc(var(--border--h2)*-1) 0px rgba(255, 255, 255, 0.5)) 
@@ -169,7 +171,7 @@ lay-grad{
     }
     &.laygrad--typog--blackborder{
         .laygrad--message{
-            h2{
+            h1,h2,h3,h4,h5{
                 filter: 
                     drop-shadow( calc(var(--border--h2)*-1) calc(var(--border--h2)*-1) 0px rgba(0, 0, 0, 0.5)) 
                     drop-shadow( calc(var(--border--h2)*1)  calc(var(--border--h2)*-1) 0px rgba(0, 0, 0, 0.5)) 
@@ -187,7 +189,7 @@ lay-grad{
     }
     &.laygrad--typog--whitedown{
         .laygrad--message{
-            h2{
+            h1,h2,h3,h4,h5{
                 filter: 
                     drop-shadow( calc(var(--border--h2)*1)  calc(var(--border--h2)*0)  0px rgba(255, 255, 255, 0.8)) 
                     drop-shadow( calc(var(--border--h2)*0)  calc(var(--border--h2)*1)  0px rgba(255, 255, 255, 0.8)) 
@@ -203,7 +205,7 @@ lay-grad{
     }
     &.laygrad--typog--blackdown{
         .laygrad--message{
-            h2{
+            h1,h2,h3,h4,h5{
                 filter: 
                     drop-shadow( calc(var(--border--h2)*1)  calc(var(--border--h2)*0)  0px rgba(0, 0, 0, 0.5)) 
                     drop-shadow( calc(var(--border--h2)*0)  calc(var(--border--h2)*1)  0px rgba(0, 0, 0, 0.5)) 
@@ -219,7 +221,7 @@ lay-grad{
     }
     &.laygrad--typog--graydown{
         .laygrad--message{
-            h2{
+            h1,h2,h3,h4,h5{
                 filter: 
                     drop-shadow( calc(var(--border--h2)*1)  calc(var(--border--h2)*0)  0px rgba(128, 128, 128, 0.5)) 
                     drop-shadow( calc(var(--border--h2)*0)  calc(var(--border--h2)*1)  0px rgba(128, 128, 128, 0.5)) 

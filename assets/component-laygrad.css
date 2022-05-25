@@ -208,32 +208,34 @@ lay-grad.laygrad--heroimg.laygrad--anime--gradiation.laygrad--heroimg--h::before
 lay-grad {
   --border--h2:2px;
   --border--p:1px;
+  display: block;
+  min-height: var(--laygrad--minheight);
 }
-lay-grad.laygrad--typog--whiteborder .laygrad--message h2 {
+lay-grad.laygrad--typog--whiteborder .laygrad--message h1, lay-grad.laygrad--typog--whiteborder .laygrad--message h2, lay-grad.laygrad--typog--whiteborder .laygrad--message h3, lay-grad.laygrad--typog--whiteborder .laygrad--message h4, lay-grad.laygrad--typog--whiteborder .laygrad--message h5 {
   filter: drop-shadow(calc(var(--border--h2) * -1) calc(var(--border--h2) * -1) 0px rgba(255, 255, 255, 0.5)) drop-shadow(calc(var(--border--h2) * 1) calc(var(--border--h2) * -1) 0px rgba(255, 255, 255, 0.5)) drop-shadow(calc(var(--border--h2) * -1) calc(var(--border--h2) * 1) 0px rgba(255, 255, 255, 0.5)) drop-shadow(calc(var(--border--h2) * 1) calc(var(--border--h2) * 1) 0px rgba(255, 255, 255, 0.5));
 }
 lay-grad.laygrad--typog--whiteborder .laygrad--message p {
   filter: drop-shadow(calc(var(--border--p) * -1) calc(var(--border--p) * -1) 0px rgba(255, 255, 255, 0.5)) drop-shadow(calc(var(--border--p) * 1) calc(var(--border--p) * -1) 0px rgba(255, 255, 255, 0.5)) drop-shadow(calc(var(--border--p) * -1) calc(var(--border--p) * 1) 0px rgba(255, 255, 255, 0.5)) drop-shadow(calc(var(--border--p) * 1) calc(var(--border--p) * 1) 0px rgba(255, 255, 255, 0.5));
 }
-lay-grad.laygrad--typog--blackborder .laygrad--message h2 {
+lay-grad.laygrad--typog--blackborder .laygrad--message h1, lay-grad.laygrad--typog--blackborder .laygrad--message h2, lay-grad.laygrad--typog--blackborder .laygrad--message h3, lay-grad.laygrad--typog--blackborder .laygrad--message h4, lay-grad.laygrad--typog--blackborder .laygrad--message h5 {
   filter: drop-shadow(calc(var(--border--h2) * -1) calc(var(--border--h2) * -1) 0px rgba(0, 0, 0, 0.5)) drop-shadow(calc(var(--border--h2) * 1) calc(var(--border--h2) * -1) 0px rgba(0, 0, 0, 0.5)) drop-shadow(calc(var(--border--h2) * -1) calc(var(--border--h2) * 1) 0px rgba(0, 0, 0, 0.5)) drop-shadow(calc(var(--border--h2) * 1) calc(var(--border--h2) * 1) 0px rgba(0, 0, 0, 0.5));
 }
 lay-grad.laygrad--typog--blackborder .laygrad--message p {
   filter: drop-shadow(calc(var(--border--p) * -1) calc(var(--border--p) * -1) 0px rgba(0, 0, 0, 0.5)) drop-shadow(calc(var(--border--p) * 1) calc(var(--border--p) * -1) 0px rgba(0, 0, 0, 0.5)) drop-shadow(calc(var(--border--p) * -1) calc(var(--border--p) * 1) 0px rgba(0, 0, 0, 0.5)) drop-shadow(calc(var(--border--p) * 1) calc(var(--border--p) * 1) 0px rgba(0, 0, 0, 0.5));
 }
-lay-grad.laygrad--typog--whitedown .laygrad--message h2 {
+lay-grad.laygrad--typog--whitedown .laygrad--message h1, lay-grad.laygrad--typog--whitedown .laygrad--message h2, lay-grad.laygrad--typog--whitedown .laygrad--message h3, lay-grad.laygrad--typog--whitedown .laygrad--message h4, lay-grad.laygrad--typog--whitedown .laygrad--message h5 {
   filter: drop-shadow(calc(var(--border--h2) * 1) calc(var(--border--h2) * 0) 0px rgba(255, 255, 255, 0.8)) drop-shadow(calc(var(--border--h2) * 0) calc(var(--border--h2) * 1) 0px rgba(255, 255, 255, 0.8)) drop-shadow(calc(var(--border--h2) * 1) calc(var(--border--h2) * 1) 0px rgba(255, 255, 255, 0.8));
 }
 lay-grad.laygrad--typog--whitedown .laygrad--message p {
   filter: drop-shadow(calc(var(--border--p) * 1) calc(var(--border--p) * 0) 0px rgba(255, 255, 255, 0.8)) drop-shadow(calc(var(--border--p) * 0) calc(var(--border--p) * 1) 0px rgba(255, 255, 255, 0.8)) drop-shadow(calc(var(--border--p) * 1) calc(var(--border--p) * 1) 0px rgba(255, 255, 255, 0.8));
 }
-lay-grad.laygrad--typog--blackdown .laygrad--message h2 {
+lay-grad.laygrad--typog--blackdown .laygrad--message h1, lay-grad.laygrad--typog--blackdown .laygrad--message h2, lay-grad.laygrad--typog--blackdown .laygrad--message h3, lay-grad.laygrad--typog--blackdown .laygrad--message h4, lay-grad.laygrad--typog--blackdown .laygrad--message h5 {
   filter: drop-shadow(calc(var(--border--h2) * 1) calc(var(--border--h2) * 0) 0px rgba(0, 0, 0, 0.5)) drop-shadow(calc(var(--border--h2) * 0) calc(var(--border--h2) * 1) 0px rgba(0, 0, 0, 0.5)) drop-shadow(calc(var(--border--h2) * 1) calc(var(--border--h2) * 1) 0px rgba(0, 0, 0, 0.5));
 }
 lay-grad.laygrad--typog--blackdown .laygrad--message p {
   filter: drop-shadow(calc(var(--border--p) * 1) calc(var(--border--p) * 0) 0px rgba(0, 0, 0, 0.5)) drop-shadow(calc(var(--border--p) * 0) calc(var(--border--p) * 1) 0px rgba(0, 0, 0, 0.5)) drop-shadow(calc(var(--border--p) * 1) calc(var(--border--p) * 1) 0px rgba(0, 0, 0, 0.5));
 }
-lay-grad.laygrad--typog--graydown .laygrad--message h2 {
+lay-grad.laygrad--typog--graydown .laygrad--message h1, lay-grad.laygrad--typog--graydown .laygrad--message h2, lay-grad.laygrad--typog--graydown .laygrad--message h3, lay-grad.laygrad--typog--graydown .laygrad--message h4, lay-grad.laygrad--typog--graydown .laygrad--message h5 {
   filter: drop-shadow(calc(var(--border--h2) * 1) calc(var(--border--h2) * 0) 0px rgba(128, 128, 128, 0.5)) drop-shadow(calc(var(--border--h2) * 0) calc(var(--border--h2) * 1) 0px rgba(128, 128, 128, 0.5)) drop-shadow(calc(var(--border--h2) * 1) calc(var(--border--h2) * 1) 0px rgba(128, 128, 128, 0.5));
 }
 lay-grad.laygrad--typog--graydown .laygrad--message p {

@@ -1,1 +1,192 @@
-{"sections":{"image_banner":{"type":"image-banner","blocks":{"heading":{"type":"heading","settings":{"heading":"Image banner","heading_size":"h0"}},"text":{"type":"text","settings":{"text":"Give customers details about the banner image(s) or content on the template.","text_style":"body"}},"button":{"type":"buttons","settings":{"button_label_1":"Shop all","button_link_1":"shopify:\/\/collections\/all","button_style_secondary_1":true,"button_label_2":"","button_link_2":"","button_style_secondary_2":false}}},"block_order":["heading","text","button"],"settings":{"image_overlay_opacity":40,"image_height":"large","adapt_height_first_image":false,"desktop_content_position":"bottom-center","show_text_box":false,"desktop_content_alignment":"center","color_scheme":"background-1","mobile_content_alignment":"center","stack_images_on_mobile":false,"show_text_below":false}},"rich_text":{"type":"rich-text","blocks":{"heading":{"type":"heading","settings":{"heading":"Talk about your brand","heading_size":"h1"}},"text":{"type":"text","settings":{"text":"<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"}}},"block_order":["heading","text"],"settings":{"color_scheme":"background-1","full_width":true,"padding_top":40,"padding_bottom":0}},"featured_collection":{"type":"featured-collection","settings":{"title":"Featured products","heading_size":"h2","collection":"all","products_to_show":8,"columns_desktop":4,"show_view_all":false,"color_scheme":"background-1","image_ratio":"adapt","show_secondary_image":true,"show_vendor":false,"show_rating":false,"columns_mobile":"2","swipe_on_mobile":false,"padding_top":28,"padding_bottom":36}},"collage":{"type":"collage","blocks":{"collection-0":{"type":"collection","settings":{"collection":""}},"product":{"type":"product","settings":{"product":"","second_image":false}},"collection-1":{"type":"collection","settings":{"collection":""}}},"block_order":["collection-0","product","collection-1"],"settings":{"heading":"Multimedia collage","heading_size":"h2","desktop_layout":"left","mobile_layout":"collage","color_scheme":"background-1","padding_top":36,"padding_bottom":36}},"video":{"type":"video","settings":{"heading":"","heading_size":"h1","video_url":"https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc","description":"","full_width":false,"color_scheme":"background-1","padding_top":36,"padding_bottom":36}},"multicolumn":{"type":"multicolumn","blocks":{"column1":{"type":"column","settings":{"title":"Column","text":"<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>","link_label":"","link":""}},"column2":{"type":"column","settings":{"title":"Column","text":"<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>","link_label":"","link":""}},"column3":{"type":"column","settings":{"title":"Column","text":"<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>","link_label":"","link":""}}},"block_order":["column1","column2","column3"],"settings":{"title":"","heading_size":"h1","image_width":"third","image_ratio":"adapt","columns_desktop":3,"column_alignment":"center","background_style":"none","button_label":"","button_link":"","color_scheme":"background-1","columns_mobile":"1","swipe_on_mobile":false,"padding_top":36,"padding_bottom":36}}},"order":["image_banner","rich_text","featured_collection","collage","video","multicolumn"]}
+{
+  "sections": {
+    "rich_text": {
+      "type": "rich-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "the Talent",
+            "heading_size": "h0"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>魅力販売用Shopifyテーマ「Talent」 デモページ (開発中)<\/strong><\/p><p>Powered by TacoLab<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 0
+      }
+    },
+    "1653465612492051be": {
+      "type": "rich-text",
+      "blocks": {
+        "1653465612062884b8-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Shopify + Talent",
+            "heading_size": "h1"
+          }
+        },
+        "1653465612062884b8-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>充実な販売機能を備えたShopifyにTalentテーマを組み合わせると<\/p><p>あなたの魅力を、簡単に様々な形でマネタイズできます(予定)<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "1653465612062884b8-0",
+        "1653465612062884b8-1"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "multicolumn": {
+      "type": "multicolumn",
+      "blocks": {
+        "column1": {
+          "type": "column",
+          "settings": {
+            "title": "無形商品販売",
+            "text": "<p>オンライン相談や、オフライン面会などアポイントを販売できます。<\/p><p>コンサル、レッスン、ガイドなど<\/p><p>あなたのスキルをマネタイズ！<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column2": {
+          "type": "column",
+          "settings": {
+            "title": "デジタル販売",
+            "text": "<p>文章、写真、ビデオなども売れます<\/p><p>あなたのクリエイティブアートや<\/p><p>「How to」「現地情報」など<\/p><p>知識を販売することも！<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column3": {
+          "type": "column",
+          "settings": {
+            "title": "補助機能",
+            "text": "<p>SEO強ブログ機能やSNS連携は当然。<\/p><p>有料コミニティを運営したり、<\/p><p>オリジナルグッズ制作販売とも連携<\/p><p>もちろん物品販売もできます<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column1",
+        "column2",
+        "column3"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "third",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "center",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "background-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "16534673872c14a2cf": {
+      "type": "rich-text",
+      "blocks": {
+        "16534673878c3230dc-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "デモンストレーション",
+            "heading_size": "h1"
+          }
+        },
+        "16534673878c3230dc-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Talentテーマを使うとこんな魅力的なページも簡単に制作！<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "16534673878c3230dc-0",
+        "16534673878c3230dc-1"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "16534656217b84fe97": {
+      "type": "image-with-text",
+      "blocks": {
+        "16534656217569288e-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "旅マスター",
+            "heading_size": "h2"
+          }
+        },
+        "16534656217569288e-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>旅ガイド販売ページのサンプル<\/p><p>美しい写真をダイナミックに使い<\/p><p>各国の魅力を表現しました<\/p>",
+            "text_style": "body"
+          }
+        },
+        "16534656217569288e-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "Check It Now",
+            "button_link": "shopify:\/\/pages\/旅マスター"
+          }
+        }
+      },
+      "block_order": [
+        "16534656217569288e-0",
+        "16534656217569288e-1",
+        "16534656217569288e-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/2022-05-25_173622.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "rich_text",
+    "1653465612492051be",
+    "multicolumn",
+    "16534673872c14a2cf",
+    "16534656217b84fe97"
+  ]
+}

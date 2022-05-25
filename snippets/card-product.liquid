@@ -19,7 +19,7 @@
 {% endcomment %}
 
 {{ 'component-rating.css' | asset_url | stylesheet_tag }}
-{{ 'component-glass.css' | asset_url | stylesheet_tag }}
+{{ 'component-texture.css' | asset_url | stylesheet_tag }}
 {{ 'component-button.css' | asset_url | stylesheet_tag }}
 {{ 'component-shadow.css' | asset_url | stylesheet_tag }}
 {{ "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" | stylesheet_tag }}
@@ -40,7 +40,6 @@
     <div class="card
       card--{{ settings.card_style }}
       {% if card_product.featured_media %} card--media{% else %} card--text{% endif %}
-      {% if settings.card_style == 'card' %} color-{{ settings.card_color_scheme }} gradient{% endif %}
       {% if extend_height %} card--extend-height{% endif %}
       {% if card_product.featured_media == nil and settings.card_style == 'card' %} ratio{% endif %}"
       style="--ratio-percent: {{ 1 | divided_by: ratio | times: 100 }}%;"
@@ -106,7 +105,8 @@
           </div>
         </div>
       </div>
-      <div class="card__content glass--white shadow-d1">
+      <div class="card__content texture texture--glass shadow-d1
+        {% if settings.card_style == 'card' %} color-{{ settings.card_color_scheme }} gradient{% endif %}">
         <div class="card__information">
           <h3 class="card__heading{% if card_product.featured_media or settings.card_style == 'standard' %} h5{% endif %}"{% if card_product.featured_media or settings.card_style == 'card' %} id="title-{{ section_id }}-{{ card_product.id }}"{% endif %}>
             <a href="{{ card_product.url }}" class="full-unstyled-link">

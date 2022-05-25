@@ -25,7 +25,7 @@
 <script src="{{ 'component-laygrad.js' | asset_url }}" defer="defer"></script>
 <lay-grad
   class="
-    page-width page-width--narrow section-{{ section.id }}-padding 
+    main-page page-width page-width--narrow section-{{ section.id }}-padding 
     laygrad laygrad--heroimg 
     laygrad--typog--{{ section.settings.typography }} 
     laygrad--imgfl--{{ section.settings.imagefilter }} 
@@ -37,17 +37,29 @@
     --laygrad--imageblur:{{ section.settings.imageblur }}px;
     --laygrad--image-fil:{{ section.settings.imagefilrate }}%;
     --laygrad--animedura:{{ section.settings.animation_duration }}s;
+    --laygrad--minheight:{{ section.settings.minheight }}vh; 
+    --laygrad--blockwidth-pc:{{ section.settings.blockwidth-pc }}%; 
+    --laygrad--blockwidth-sp:{{ section.settings.blockwidth-sp }}%; 
   "
   {% if section.settings.heroimage %}
     data-heroimg="{{ section.settings.heroimage | img_url: '1024x' }}"
   {% endif %}
  
 >
-  <h1 class="main-page-title page-title h0">
-    {{ page.title | escape }}
-  </h1>
-  <div class="rte">
-    {{ page.content }}
+  <div class="main-page-block 
+    texture texture--{{ section.settings.blockstyle }} shadow-d1
+    color-{{ settings.card_color_scheme }} gradient laygrad--message ">
+    <div class="main-page-upper">
+      <h1 class="main-page-title page-title h0">
+        {{ page.title | escape }}
+      </h1>
+      {% if section.settings.profimage %}
+        {{ section.settings.profimage | img_tag :'Prof', 'main-page-prof' }}
+      {% endif %}
+    </div>
+    <div class="main-page-content rte laygrad--message">
+      {{ page.content }}
+    </div>
   </div>
 </lay-grad>
 
@@ -59,7 +71,7 @@
   "settings": [
     {
       "type": "range",
-      "id": "min-height",
+      "id": "minheight",
       "min": 0,
       "max": 100,
       "step": 5,
