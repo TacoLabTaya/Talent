@@ -2198,8 +2198,12 @@ input[type='checkbox'] {
 /* Main Header Layout */
 .header-wrapper {
   display: block;
-  position: relative;
-  background-color: rgb(var(--color-background));
+  //position: relative;
+  position: fixed;
+  width: 100%;
+  top:0;
+  background-color: rgba(var(--color-background), 0.7);
+  backdrop-filter: blur(5px);
 }
 
 .header-wrapper--border-bottom {
@@ -2370,7 +2374,7 @@ input[type='checkbox'] {
 }
 
 .header__icon--menu[aria-expanded="true"]::before {
-  content: "";
+  /*content: "";*/
   top: 100%;
   left: 0;
   height: calc(var(--viewport-height, 100vh) - (var(--header-bottom-position, 100%)));
@@ -2378,6 +2382,7 @@ input[type='checkbox'] {
   display: block;
   position: absolute;
   background: rgba(var(--color-foreground), 0.5);
+  z-index: 1;
 }
 
 /* Search */
@@ -2439,6 +2444,7 @@ details[open] .modal-overlay::after {
   top: 100%;
   left: 0;
   right: 0;
+  height: 100dvh;
   height: 100vh;
 }
 

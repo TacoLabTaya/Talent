@@ -3,7 +3,7 @@
     "main": {
       "type": "main-page",
       "settings": {
-        "minheight": 90,
+        "minheight": 100,
         "heroimage": "shopify:\/\/shop_images\/DSC_0042.jpg",
         "profimage": "shopify:\/\/shop_images\/1644595135083_2.jpg",
         "blockwidth-pc": 80,

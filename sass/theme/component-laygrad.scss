@@ -11,6 +11,8 @@ lay-grad{
     position:relative;
     background-color:transparent;
     z-index: 0;
+    //min-height: 100dvh;
+    //min-height: 100vh;
     >*{ backdrop-filter: blur(var(--laygrad--imageblur)); }
     &::before, &::after{
         position: absolute;
@@ -148,6 +150,7 @@ lay-grad{
     --border--p :1px;
     display: block;
     min-height: var(--laygrad--minheight);
+    //min-height: var(--laygrad--minheight--d);
     .laygrad--message{
 
     }
